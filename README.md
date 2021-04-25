@@ -16,8 +16,8 @@ Download of clone deze repository naar je computer. Gebruik [Live Server](https:
 let fish = document.createElement("fish")
 ```
 - Voeg de vis vervolgens toe aan de game
-```
-let game = document.getElementsByTagName("game")[0]
+```typescript
+const game = document.querySelector("game")
 game.appendChild(fish)
 ```
 - Plaats je code in een functie.
