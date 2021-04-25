@@ -5,10 +5,9 @@ body {
     margin:0px; padding:0px;
 }
 
-body * {
+fish, bubble, background {
     position: absolute;
     display: block;
-    margin:0px; padding:0px;
     box-sizing: border-box;
     background-repeat: no-repeat;
 }
@@ -32,6 +31,6 @@ bubble {
 
 background {
     background-image: url(../images/water.jpg);
-    width:100%; height: 100%;
+    width:100vw; height: 100vh;
     background-size: cover;
 }
