@@ -14,7 +14,11 @@ Download of clone deze repository naar je computer. Gebruik [Live Server](https:
 - Vervang `const fish = document.querySelector("fish")` in de javascript file door:
 ```typescript
 let fish = document.createElement("fish")
-document.body.appendChild(fish)
+```
+- Voeg de vis vervolgens toe aan de game
+```
+let game = document.getElementsByTagName("game")[0]
+game.appendChild(fish)
 ```
 - Plaats je code in een functie.
 - Doe nu ditzelfde voor het bubble element.
@@ -50,7 +54,7 @@ fish.style.filter = `hue-rotate(200deg)`
 ## Extra uitdaging
 
 - Voeg een click event listener toe aan elk visje en bubble. 
-- Als geklikt wordt op de vis geef je de geklikte vis de CSS class "deadfish" door `element.classList.add("deadfish")` te gebruiken.
+- Als geklikt wordt op de vis geef je de geklikte vis de CSS class "dead" door `element.classList.add("dead")` te gebruiken.
 - Als geklikt wordt op de bubble verwijder je het element met `element.remove()`
 - Kan je een "plop" [geluidje](#sound) laten horen als je een bubble wegklikt?
 
